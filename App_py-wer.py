@@ -17,19 +17,19 @@ path = os.path.dirname(__file__)
 
 # Lecture fichiers
 df_production = pd.read_csv(
-    path + '\\Data\\df_production.csv', 
+    path + '\\df_production.csv', 
     sep=';', 
     index_col='Semaine'
     )
 
 df_parc = pd.read_csv(
-    path + '\\Data\\df_parc.csv', 
+    path + '\\df_parc.csv', 
     sep=';',
     index_col='Annee'
     )   
 
 df_previsions_conso = pd.read_csv(
-    path + '\\Data\\previsions_conso_ST.csv', 
+    path + '\\previsions_conso_ST.csv', 
     sep=';'
     )
 
