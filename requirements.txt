@@ -1,5 +1,5 @@
 bokeh==2.4.1
-statsmodel
+statsmodels
 pandas==1.4.1
 numpy==1.22.3
 Pillow==9.0.1
