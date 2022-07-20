@@ -1,2 +1,4 @@
 bokeh==2.4.1
 statsmodel==0.12.2
+pandas
+numpy
