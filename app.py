@@ -18,11 +18,11 @@ def leprojet ():
 
     Pywer-generation est un projet dont l'objectif est de prédire la
     consommation électrique et d'en déduire la tension possible sur
-    le réseau français en fonction de paramètres de production choisis.
+    le réseau français en fonction de paramètres choisis.
     Il est important de noter que la production d'électricité est basée sur
     les prévisions de consommation.
     
-    Afin de rendre l'expérience utilisateur de ce streamlit plus 
+    Afin de rendre l'expérience utilisateur de cette application plus 
     interactive, le dernier onglet permet de faire varier la consommation
     et la production de chaque filière (nucléaire, thermique, éolien, etc.)
     pour simuler la tension sur le réseau électrique en fonction des 
@@ -43,9 +43,9 @@ def leprojet ():
         
     Le diagrame ci-dessous décrit : 
     - l'organisation du code, 
-    - Les fichiers open Data utilisés 
+    - Les fichiers open data utilisés 
     - Les fichiers utilisés par le projet afin de faciliter le travail \
-    commun mais aussi obtimiser l'espace mémoire utilisés
+    commun mais aussi obtimiser l'espace mémoire utilisé
     - Les modèles générés
     """)
 
@@ -54,10 +54,10 @@ def leprojet ():
 
     st.subheader("Données utilisées dans cette application")
     st.write("""
-        La dernière étape du projet à consister dans la réalisation de ce 
+        La dernière étape du projet a consisté dans la réalisation de ce 
         streamlit. Il reprend une partie des fichiers utilisés ou générés
-         par le code décrit ci dessus.
-         """)
+        par le code décrit ci dessus.
+        """)
     im3 = Image.open('Images/donnees_streamlit.PNG')
     st.image(im3, use_column_width=False)
 
@@ -81,9 +81,9 @@ def leprojet ():
 def descriptiondesdonnées():
     st.header("Les données d'entrée")
     st.write("""
-    Ce projet est basé sur 2 principaux ensemble de données que nous avons croisés :   
-    * Les données de consommation et de production électrique par filière et par région à la maille quotidienne,  
-    * Les données de climat (température, vitesse du vent, pluviométrie, nébulosité, quantité de neige... enregistrées à heure fixe toutes les 3 heures.
+    Ce projet est basé sur 2 principaux ensembles de données que nous avons croisés :   
+    * Les données de consommation et de production électriques par filière et par région à la maille quotidienne,  
+    * Les données de climat (température, vitesse du vent, pluviométrie, nébulosité, quantité de neige, etc.) enregistrées à heure fixe toutes les 3 heures.
     Nous y avons ajouté des données de capacité de production maximale par filière pour étudier la tension sur le réseau électrique français.
     """)
     
@@ -110,7 +110,7 @@ def descriptiondesdonnées():
     st.write(pres_station)
 
     st.subheader("2. Les communes")
-    pres_communes = pd.read_csv('data/communes2020.csv', sep=',', nrows=100)
+    pres_communes = pd.read_csv('Data/communes2020.csv', sep=',', nrows=100)
     st.write(pres_communes)
 
 
@@ -235,7 +235,7 @@ def explorationdesdonnées():
             )
 
     st.subheader('Productions mensuelles pour chaque filière')
-    st.image('Data\Screenshots_EDA\filiere_mensuel.png',
+    st.image('Data/Screenshots_EDA/filiere_mensuel.png',
             output_format='PNG',
             use_column_width='auto',
             caption="Production mensuelle (MWh) pour chaque filière, \
@@ -252,7 +252,7 @@ def explorationdesdonnées():
             )
 
     st.subheader('Production éolienne en fonction de la vitesse du vent')
-    st.image('Data\Screenshots_EDA\vitesse_vent_prod_eolienne_region_32.png',
+    st.image('Data/Screenshots_EDA/vitesse_vent_prod_eolienne_region_32.png',
             output_format='PNG',
             use_column_width='auto',
             caption="Production éolienne (MWh) expliquée par la vitesse du \
