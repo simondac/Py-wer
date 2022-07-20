@@ -264,6 +264,7 @@ def explorationdesdonnées():
 def letsplay():
     # Path
     path = os.path.dirname(__file__)
+    path = ''
 
 
     # Lecture fichiers
