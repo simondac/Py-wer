@@ -2,7 +2,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import os
+#import os
 from PIL import Image
 from bokeh.plotting import figure
 from bokeh.palettes import Category20
@@ -263,7 +263,7 @@ def explorationdesdonnées():
 
 def letsplay():
     # Path
-    path = os.path.dirname(__file__)
+    #path = os.path.dirname(__file__)
     path = ''
 
 
