@@ -110,7 +110,7 @@ def descriptiondesdonnées():
     st.write(pres_station)
 
     st.subheader("2. Les communes")
-    pres_communes = pd.read_csv('data/communes2020.csv', sep=',', nrows=100)
+    pres_communes = pd.read_csv('Data/communes2020.csv', sep=',', nrows=100)
     st.write(pres_communes)
 
 
