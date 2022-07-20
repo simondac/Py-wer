@@ -2,7 +2,6 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import os
 from PIL import Image
 from bokeh.plotting import figure
 from bokeh.palettes import Category20
@@ -236,7 +235,7 @@ def explorationdesdonnées():
             )
 
     st.subheader('Productions mensuelles pour chaque filière')
-    st.image('Data\\Screenshots_EDA\\filiere_mensuel.png',
+    st.image('Data/Screenshots_EDA/filiere_mensuel.png',
             output_format='PNG',
             use_column_width='auto',
             caption="Production mensuelle (MWh) pour chaque filière, \
@@ -244,7 +243,7 @@ def explorationdesdonnées():
             )
 
     st.subheader('Consommation en fonction de la température')
-    st.image('Data\\Screenshots_EDA\\conso_temperature_region_11.png',
+    st.image('Data/Screenshots_EDA/conso_temperature_region_11.png',
             output_format='PNG',
             use_column_width='auto',
             caption="Consommation (MWh) expliquée par la température, pour la \
@@ -253,7 +252,7 @@ def explorationdesdonnées():
             )
 
     st.subheader('Production éolienne en fonction de la vitesse du vent')
-    st.image('Data\\Screenshots_EDA\\vitesse_vent_prod_eolienne_region_32.png',
+    st.image('Data/Screenshots_EDA/vitesse_vent_prod_eolienne_region_32.png',
             output_format='PNG',
             use_column_width='auto',
             caption="Production éolienne (MWh) expliquée par la vitesse du \
@@ -262,26 +261,22 @@ def explorationdesdonnées():
                     )
 
 def letsplay():
-    # Path
-    path = os.path.dirname(__file__)
-
-
     # Lecture fichiers
     df_parc = pd.read_csv(
-        path + '\\Data\\parc.csv', 
+        'Data/parc.csv', 
         sep=';',
         index_col='Annee'
     )
 
     df_rte_meteo = pd.read_csv(
-        path + '\\Data\\rte_meteo_max_hebdo.csv',
+        'Data/rte_meteo_max_hebdo.csv',
         sep=';',
         decimal='.',
         index_col=['Date']
     )
 
     df_predictions_vent = pd.read_csv(
-        path + '\\Data\\predictions_vent.csv',
+        'Data/predictions_vent.csv',
         sep=';',
         decimal='.',
         # index_col=['Date']
@@ -289,7 +284,7 @@ def letsplay():
 
 
     # Lecture du modèle de série temporelle
-    modele_conso = ARIMAResults.load(path + '\\Modeles\\conso_temp_st.pkl')
+    modele_conso = ARIMAResults.load('Modeles/conso_temp_st.pkl')
 
 
     # Création de la séquence de température initiale
