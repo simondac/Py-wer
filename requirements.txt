@@ -3,3 +3,4 @@ statsmodel
 pandas==1.4.1
 numpy==1.22.3
 Pillow==9.0.1
+streamlit==1.8.1
