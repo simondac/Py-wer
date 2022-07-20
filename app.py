@@ -268,7 +268,7 @@ def letsplay():
 
     # Lecture fichiers
     df_parc = pd.read_csv(
-        path + 'Data\parc.csv', 
+        'Data\parc.csv', 
         sep=';',
         index_col='Annee'
     )
