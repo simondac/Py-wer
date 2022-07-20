@@ -235,7 +235,7 @@ def explorationdesdonnées():
             )
 
     st.subheader('Productions mensuelles pour chaque filière')
-    st.image('Data/Screenshots_EDA/filiere_mensuel.png',
+    st.image('Data\Screenshots_EDA\filiere_mensuel.png',
             output_format='PNG',
             use_column_width='auto',
             caption="Production mensuelle (MWh) pour chaque filière, \
@@ -252,7 +252,7 @@ def explorationdesdonnées():
             )
 
     st.subheader('Production éolienne en fonction de la vitesse du vent')
-    st.image('Data/Screenshots_EDA/vitesse_vent_prod_eolienne_region_32.png',
+    st.image('Data\Screenshots_EDA\vitesse_vent_prod_eolienne_region_32.png',
             output_format='PNG',
             use_column_width='auto',
             caption="Production éolienne (MWh) expliquée par la vitesse du \
