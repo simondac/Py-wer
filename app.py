@@ -263,25 +263,25 @@ def explorationdesdonnées():
 
 def letsplay():
     # Path
-    #path = os.path.dirname(__file__)
+    # path = os.path.dirname(__file__)
 
 
     # Lecture fichiers
     df_parc = pd.read_csv(
-        'Data\parc.csv', 
+        'Data/parc.csv', 
         sep=';',
         index_col='Annee'
     )
 
     df_rte_meteo = pd.read_csv(
-        'Data\rte_meteo_max_hebdo.csv',
+        'Data/rte_meteo_max_hebdo.csv',
         sep=';',
         decimal='.',
         index_col=['Date']
     )
 
     df_predictions_vent = pd.read_csv(
-        'Data\predictions_vent.csv',
+        'Data/predictions_vent.csv',
         sep=';',
         decimal='.',
         # index_col=['Date']
@@ -289,7 +289,7 @@ def letsplay():
 
 
     # Lecture du modèle de série temporelle
-    modele_conso = ARIMAResults.load('Modeles\conso_temp_st.pkl')
+    modele_conso = ARIMAResults.load('Modeles/conso_temp_st.pkl')
 
 
     # Création de la séquence de température initiale
