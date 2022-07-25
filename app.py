@@ -367,7 +367,7 @@ def modelisation():
 
     st.subheader('1. Décomposition de la série')
     st.image(
-        'Images\seasonal_decompose.png',
+        'Images/seasonal_decompose.png',
         output_format='PNG',
         use_column_width='auto',
         caption='Décomposition de la série en tendance, saisonnalité et \
@@ -375,7 +375,7 @@ def modelisation():
         )
     st.write('**Série désaisonnalisée**')
     st.image(
-        'Images\serie_desaisonnalisee.png',
+        'Images/serie_desaisonnalisee.png',
         output_format='PNG',
         use_column_width='auto',
         caption='Série dont on a retranché la saisonnalité'
@@ -386,12 +386,12 @@ def modelisation():
     st.write('**Série initiale et corrélogramme**')
     st.image(
 
-        'Images\serie_initiale.png',
+        'Images/serie_initiale.png',
         output_format='PNG',
         use_column_width='auto'
         )
     st.image(
-        'Images\correlogramme_serie_initiale.png',
+        'Images/correlogramme_serie_initiale.png',
         output_format='PNG',
         use_column_width='auto',
         caption='Autocorrélogramme décroissant lentement vers 0, montrant une\
@@ -400,12 +400,12 @@ def modelisation():
 
     st.write("**Série différenciée avec une période 52, et corrélogramme**")
     st.image(
-        'Images\serie_differenciee_52.png',
+        'Images/serie_differenciee_52.png',
         output_format='PNG',
         use_column_width='auto'
         )
     st.image(
-        'Images\correlogramme_serie_differenciee_52.png',
+        'Images/correlogramme_serie_differenciee_52.png',
         output_format='PNG',
         use_column_width='auto'
         )
@@ -423,7 +423,7 @@ def modelisation():
     qui valide la pertinence des coefficients du modèle.
     """)
     st.image(
-        'Images\sarimax.png',
+        'Images/sarimax.png',
         output_format='PNG',
         use_column_width='auto'
         )
@@ -447,7 +447,7 @@ def modelisation():
         """)
 
     st.image(
-            'Images\graph_prev.png',
+            'Images/graph_prev.png',
             output_format='PNG',
             use_column_width='auto',
             caption="Prévisions avec le modèle comportant la température comme \
@@ -463,7 +463,7 @@ def modelisation():
     * Prédire les données de l'ensemble de test et confirmer les résultats.""")
 
     st.image(
-        'Data\Screenshots_MODELISATION\Prédiction à réaliser.png',
+        'Data/Screenshots_MODELISATION/Prédiction à réaliser.png',
         output_format='JPEG',
         use_column_width='auto',
         # width=300,
@@ -474,7 +474,7 @@ def modelisation():
     st.write("""La première étape a consistée dans la préparation du dataset car les données doivent être dans
          un format de facon légèrement différent de ce que l'on fait sur d'autres types de modèle""")
     st.image(
-            'Data\Screenshots_MODELISATION\Prepa data dl.PNG',
+            'Data/Screenshots_MODELISATION/Prepa data dl.PNG',
             output_format='JPEG',
             use_column_width='auto',
             # width=300,
@@ -482,7 +482,7 @@ def modelisation():
             )
     st.write("""   """)
     st.image(
-        'Data\Screenshots_MODELISATION\Preparation deep predictions avec variables exogenes.PNG',
+        'Data/Screenshots_MODELISATION/Preparation deep predictions avec variables exogenes.PNG',
         output_format='JPEG',
         use_column_width='auto',
         # width=300,
@@ -498,7 +498,7 @@ def modelisation():
     col7, mid4, col8 = st.columns([20, 2, 20])
     with col7:
         st.image(
-            'Data\Screenshots_MODELISATION\desc_modele_1.png',
+            'Data/Screenshots_MODELISATION/desc_modele_1.png',
             output_format='JPEG',
             use_column_width='auto',
             # width=300,
@@ -507,7 +507,7 @@ def modelisation():
 
     with col8:
         st.image(
-            'Data\Screenshots_MODELISATION\Res_modele_1.png',
+            'Data/Screenshots_MODELISATION/Res_modele_1.png',
             output_format='JPEG',
             use_column_width='auto',
             # width=300,
@@ -520,7 +520,7 @@ def modelisation():
 
     with col4:
         st.image(
-            'Data\Screenshots_MODELISATION\Res_modele_1 CR.png',
+            'Data/Screenshots_MODELISATION/Res_modele_1 CR.png',
             output_format='JPEG',
             use_column_width='auto',
             # width=300,
@@ -529,7 +529,7 @@ def modelisation():
 
     with col5:
         st.image(
-            'Data\Screenshots_MODELISATION\Res_modele_1 CR_Val.png',
+            'Data/Screenshots_MODELISATION/Res_modele_1 CR_Val.png',
             output_format='JPEG',
             use_column_width='auto',
             # width=300,
@@ -537,7 +537,7 @@ def modelisation():
         )
     with col6:
         st.image(
-            'Data\Screenshots_MODELISATION\Res_modele_1 CR_test.png',
+            'Data/Screenshots_MODELISATION/Res_modele_1 CR_test.png',
             output_format='JPEG',
             use_column_width='auto',
             # width=300,
@@ -558,7 +558,7 @@ def modelisation():
 
     st.subheader('Second modèle basé un réseau de convolution LSTM')
     st.image(
-            'Data\Screenshots_MODELISATION\desc_modele_2.png',
+            'Data/Screenshots_MODELISATION/desc_modele_2.png',
             output_format='JPEG',
             use_column_width='auto',
             # width=300,
@@ -569,7 +569,7 @@ def modelisation():
 
     with col9:
         st.image(
-            'Data\Screenshots_MODELISATION\Res_modele_2 CR.png',
+            'Data/Screenshots_MODELISATION/Res_modele_2 CR.png',
             output_format='JPEG',
             use_column_width='auto',
             # width=300,
@@ -578,7 +578,7 @@ def modelisation():
 
     with col10:
         st.image(
-            'Data\Screenshots_MODELISATION\Res_modele_2 CR_Val.png',
+            'Data/Screenshots_MODELISATION/Res_modele_2 CR_Val.png',
             output_format='JPEG',
             use_column_width='auto',
             # width=300,
@@ -586,7 +586,7 @@ def modelisation():
         )
     with col11:
         st.image(
-            'Data\Screenshots_MODELISATION\Res_modele_2 CR_test.png',
+            'Data/Screenshots_MODELISATION/Res_modele_2 CR_test.png',
             output_format='JPEG',
             use_column_width='auto',
             # width=300,
@@ -605,7 +605,7 @@ def modelisation():
     st.subheader ('Modèle de convolution avec des données exogènes')
     st.write ("""En utilisant le même modèle que précédemment (CNN) nous avons intégré les données exogènes dont on disposait """)
     st.image(
-        'Data\Screenshots_MODELISATION\desc_modele_2.png',
+        'Data/Screenshots_MODELISATION/desc_modele_2.png',
         output_format='JPEG',
         use_column_width='auto',
         # width=300,
@@ -616,7 +616,7 @@ def modelisation():
 
     with col12:
         st.image(
-            'Data\Screenshots_MODELISATION\Res_modele_2 CR.png',
+            'Data/Screenshots_MODELISATION/Res_modele_2 CR.png',
             output_format='JPEG',
             use_column_width='auto',
             # width=300,
@@ -625,7 +625,7 @@ def modelisation():
 
     with col13:
         st.image(
-            'Data\Screenshots_MODELISATION\Res_modele_2 CR_Val.png',
+            'Data/Screenshots_MODELISATION/Res_modele_2 CR_Val.png',
             output_format='JPEG',
             use_column_width='auto',
             # width=300,
@@ -633,7 +633,7 @@ def modelisation():
         )
     with col14:
         st.image(
-            'Data\Screenshots_MODELISATION\Res_modele_2 CR_test.png',
+            'Data/Screenshots_MODELISATION/Res_modele_2 CR_test.png',
             output_format='JPEG',
             use_column_width='auto',
             # width=300,
