@@ -283,7 +283,7 @@ def modelisation():
 
     with col1:
         st.image(
-            'Data\Screenshots_MODELISATION\Regression_nationale_temp.PNG',
+            'Data/Screenshots_MODELISATION/Regression_nationale_temp.PNG',
             output_format='JPEG',
             use_column_width='auto',
             # width=300,
@@ -293,7 +293,7 @@ def modelisation():
 
     with col2:
         st.image(
-            'Data\Screenshots_MODELISATION\Regression_nationale_humidité.PNG',
+            'Data/Screenshots_MODELISATION/Regression_nationale_humidité.PNG',
             output_format='JPEG',
             use_column_width='auto',
             # width=300,
@@ -302,7 +302,7 @@ def modelisation():
         )
     with col3:
         st.image(
-            'Data\Screenshots_MODELISATION\Regression_nationale_pluies_24H.PNG',
+            'Data/Screenshots_MODELISATION/Regression_nationale_pluies_24H.PNG',
             output_format='JPEG',
             use_column_width='auto',
             # width=300,
@@ -315,7 +315,7 @@ def modelisation():
 
     st.subheader('Régression linéaire à 2 variables - périmètre régional')
     st.image(
-        'Data\Screenshots_MODELISATION\Région 11 regression à 2 variables.PNG',
+        'Data/Screenshots_MODELISATION/Région 11 regression à 2 variables.PNG',
         output_format='JPEG',
         use_column_width='auto',
         # width=300,
@@ -323,14 +323,14 @@ def modelisation():
         )
 
     st.image(
-        'Data\Screenshots_MODELISATION\Région 24 regression à 2 variables.PNG',
+        'Data/Screenshots_MODELISATION/Région 24 regression à 2 variables.PNG',
         output_format='JPEG',
         use_column_width='auto',
         # width=300,
         caption='Région 24 - Régression à 2 Variables'
     )
     st.image(
-        'Data\Screenshots_MODELISATION\Région 27 regression à 2 variables.PNG',
+        'Data/Screenshots_MODELISATION/Région 27 regression à 2 variables.PNG',
         output_format='JPEG',
         use_column_width='auto',
         # width=300,
