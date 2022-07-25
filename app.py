@@ -209,7 +209,7 @@ def explorationdesdonnées():
 
     with col1:
         st.image(
-            'Data\Screenshots_EDA\carte_conso.jpg',
+            'Data/Screenshots_EDA/carte_conso.jpg',
             output_format='JPEG',
             use_column_width='auto',
             # width=300,
@@ -218,7 +218,7 @@ def explorationdesdonnées():
 
     with col2:
         st.image(
-            'Data\Screenshots_EDA\carte_production.jpg',
+            'Data/Screenshots_EDA/carte_production.jpg',
             output_format='JPEG',
             use_column_width='auto',
             # width=300,
@@ -227,7 +227,7 @@ def explorationdesdonnées():
 
     st.subheader('Consommation par jour de la semaine')
     st.image(
-        'Data\Screenshots_EDA\conso_jour_semaine.png',
+        'Data/Screenshots_EDA/conso_jour_semaine.png',
         output_format='PNG',
         use_column_width='auto',
         caption='Consommation moyenne par jour de la semaine \
@@ -235,7 +235,7 @@ def explorationdesdonnées():
             )
 
     st.subheader('Empilement des productions par filière')
-    st.image('Data\Screenshots_EDA\prod_filiere_2019.png',
+    st.image('Data/Screenshots_EDA/prod_filiere_2019.png',
             output_format='PNG',
             use_column_width='auto',
             caption="Production quotidienne (MWh) pour chaque filière, \
