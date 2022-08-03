@@ -729,21 +729,21 @@ def letsplay():
             min_value=0,
             max_value=100,
             step=10,
-            value=50
+            value=100
         ) / 100
         hydraulique = st.slider(
             'Production hydraulique (% du max)', 
             min_value=0, 
             max_value=100, 
             step=10,
-            value=50
+            value=100
         ) / 100
         nucleaire = st.slider(
             'Production nucléaire (% du max)', 
             min_value=0, 
             max_value=100, 
             step=10,
-            value=50
+            value=100
         ) / 100
         solaire = st.slider(
             'Production solaire (% du max)', 
@@ -757,7 +757,7 @@ def letsplay():
             min_value=0, 
             max_value=100, 
             step=10,
-            value=50
+            value=100
         ) / 100
         ech_physiques = st.slider(
             'Echanges physiques disponibles',
