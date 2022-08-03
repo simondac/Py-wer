@@ -380,7 +380,7 @@ def modelisation():
         use_column_width='auto',
         caption='Série dont on a retranché la saisonnalité'
         )
-    st.write("À noter que la série est additive. \
+    st.write("À noter que la série est **additive**. \
              Il n'y a pas d'augmentation ou de diminution de la consommation au fil du temps.")
 
     st.subheader('2. Différenciation de la série')
@@ -412,7 +412,7 @@ def modelisation():
         use_column_width='auto'
         )
     st.write("""
-    La p-value à 1.88*10e-8 confirme également la stationnarité de la série
+    La p-value du test augmenté de Dickey Fuller à **1.88*10e-8** confirme également la stationnarité de la série
     (p-value < 5% qui permet de rejeter l'hypothèse que la série n'est pas stationnaire).
     """)
 
@@ -434,8 +434,8 @@ def modelisation():
     st.write("""
         3 modèles différents ont été testés au total : 
         - Un modèle sans variable exogène
-        - Un modèle avec la température seule comme variable exogène
-        - Un modèle avec toutes les variables météo comme variables exogènes
+        - Un modèle avec la **température seule** comme variable exogène
+        - Un modèle avec **toutes les variables météo** comme variables exogènes
         Pour rendre l'application Streamlit plus interactive, seuls les deux
         modèles comportant des variables exogènes (température seule ou toutes
         les variables météo) ont été comparés. \n
@@ -455,6 +455,7 @@ def modelisation():
             caption="Prévisions avec le modèle comportant la température comme \
                 variable exogène, par rapport à l'échantillon de test"
         )
+    
     st.header('Deep learning')
     st.write("""Le modèle de timeseries répond à nos exigences en terme de score ainsi qu'en terme de besoin métier. 
     Nous avons cependant voulu tester un modèle de deep learning.       
