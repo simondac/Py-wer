@@ -380,6 +380,8 @@ def modelisation():
         use_column_width='auto',
         caption='Série dont on a retranché la saisonnalité'
         )
+    st.write("À noter que la série est additive. \
+             Il n'y a pas d'augmentation ou de diminution de la consommation au fil du temps")
 
     st.subheader('2. Différenciation de la série')
 
